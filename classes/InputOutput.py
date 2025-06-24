@@ -25,7 +25,7 @@ l
 o
 """
 
-input("New") ## This input is discarded by the program
+input("New") ## This input is discarded by the program as no variable is assigned to it
 
 print(myMultiLineStr) ## The multi-line string will be printed exactly as it is
 print(num + num) ## This will perform arithmetic addition on the integers, resulting in 14
