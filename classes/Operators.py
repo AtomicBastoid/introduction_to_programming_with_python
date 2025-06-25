@@ -32,14 +32,9 @@ a = 10
 # assign 5 to b
 b = 5 
 
-# assign the sum of a and b to a
-a += b      # a = a + b
-
-print(a) # Output 15
-
 ## Comparison Operators
 
-a = 5
+a = 7
 
 b = 2
 
@@ -72,25 +67,3 @@ print(True or False) # True
 
 # logical NOT
 print(not True) # False
-
-#Identity Operators
-
-x1 = 5
-y1 = 5
-x2 = 'Hello'
-y2 = 'Hello'
-
-print(x1 is not y1)  # prints False
-
-print(x2 is y2)  # prints True
-
-## Membership Operators
-
-message = 'Hello world'
-
-# check if 'H' is present in message string
-print('H' in message)  # prints True
-
-# check if 'hello' is present in message string
-print('hello' not in message)  # prints True
-# Note: 'hello' is not in 'Hello world' due to case sensitivity
