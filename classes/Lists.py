@@ -1,0 +1,107 @@
+#accessing elements in a list
+#print(len(my_list))
+
+#print(my_list[0])
+#print(my_list[1])
+#print(my_list[2])
+#print(my_list[3])
+#print(my_list[4])
+#print(my_list[5])
+
+#insertion /  deletion using slicing in list
+#marks =[98, 70, 50,30, 10,11,12,13]
+# print[len(marks)]
+# marks[1:2] =marks[100,200]
+
+#list and strings are mutable
+marks=[98,70,50,10,11,12,13]
+print("original list: ",marks)
+print(len(marks))
+marks[0:1] =[100,100] # insertion at index 0 replacement
+marks[1:2] =[200,200]
+# print (marks)
+marks[0] =10
+print("Final Mutated List : ",marks)
+#insertion without replacement
+marks [1:1]= ['a','b']
+print("Print insertion without replacement",marks)
+#deletion 
+marks[2:3] =[]
+print("Deletion on list",marks)
+
+
+#insertion index ko value se replace krta hai hai jb k append se end mei element save hojata hai
+#insertion with replacement 
+# insertion withour replacement 
+# append 
+# extend
+# ------------------------------------------------------------------------------------------------------------------
+'''                                                      LIST METHODS                                       '''
+# -------------------------------------------------------------------------------------------------------------------
+my_list=['apple','banana','grapes','orange']
+print(len(my_list))#4: length
+print(my_list)
+
+#appending the list (adding another item at the end of the list)
+fruit='Strawberry'
+# appended = my_list.append(fruit)
+# print(appended)
+my_list.append(fruit)
+print("Appended list: ", my_list)
+
+#reversing the list
+my_list.reverse()
+print("Reversal List:" , my_list)
+
+#sorting a list
+my_list.sort()
+print("Sorted List : ",my_list)
+
+#sorting in ascending order
+a=[2,6,4,8,9]
+a.sort()# print list in asc order
+print(a)
+a.sort(reverse = True)# print list in desc order
+print(a)
+
+#extending a list
+my_list2= [1,2,3]
+my_list.extend(my_list2)
+print("Extended List : ",my_list)
+
+# Pop (Delete) Last item from the list
+my_list.pop()
+print("last item is removed : ",my_list)
+print("Final list :" ,my_list)
+
+#making a copy of a list
+L = my_list.copy()
+print("Copied list:" , L )
+
+#appended copied list
+element = False
+L.append(element)
+print("Appended copied list :" , L)
+
+'''Task: 01
+consider a list of your choice and print last three elements and start three elements'''
+list =["apple","mango","banana", "orange","peach","pineapple"]
+a=list[3:]
+print("Last three Elements: ", a)
+#print(list[-3:])
+b=list[0:3]
+print("first three Elements: ", b)
+
+'''Task 02:
+Replace the 2nd element of your considered list with '25' integer'''
+list =["apple","mango","banana", "orange","peach","pineapple"]
+list[1]=25# with replacement
+print(list)
+
+list[1:1]=['25']
+print (list)# without replacement
+llist=[]
+llist[10:10]=[2]
+print(llist)
+llist.append(2)
+print("Appended list: ", llist)
