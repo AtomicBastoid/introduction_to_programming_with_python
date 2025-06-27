@@ -64,6 +64,7 @@ print(True and False) # False
 
 # logical OR
 print(True or False) # True
+print(False or False) # False
 
 # logical NOT
 print(not True) # False
