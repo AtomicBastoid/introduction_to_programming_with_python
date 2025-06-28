@@ -5,9 +5,9 @@ for i in range(0, 4):
     print(i)
 
 ## Iterating through a list of strings
-lst1 = ["Intro", "To", "Programming", "With", "Python"]
+lst = ["Intro", "To", "Programming", "With", "Python"]
 
-for i in lst1:
+for i in lst:
     print(i)
 
 # Iterating through a string
@@ -27,3 +27,10 @@ for i in range(0, 4):
     if i == 2:
         break  # exit the loop when i is 2
     print(i)
+
+
+
+lst = ["h","e","l","l","o"]
+
+str = str + lst[0] + lst[1] + lst[2] + lst[3] + lst[4]
+print(str)
