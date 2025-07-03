@@ -35,7 +35,6 @@ b = 5
 ## Comparison Operators
 
 a = 7
-
 b = 2
 
 # equal to operator
