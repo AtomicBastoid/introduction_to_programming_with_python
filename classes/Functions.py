@@ -125,4 +125,5 @@ def calculator():
 while True:
     flag = calculator()
     if flag == False:
-        break
+        print("Exiting the app")
+        break   # Breaking the loop once the user chooses to exit
