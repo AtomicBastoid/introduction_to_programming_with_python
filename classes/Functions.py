@@ -102,22 +102,22 @@ def division(c, d):
     return result
 
 # Main function to run the calculator
-def calculator():
+def calculator(c, d, op):
     c = int(input("enter number 1: "))
     d = int(input("enter number 2: "))
     operation = int(input("Enter 1 for Addition, Enter 2 for subtraction, Enter 3 for multiplication, Enter 4 for division " \
     "Enter 0 to exit: "))
 
-    if operation == 0:
+    if op == 0:
         return False
-    elif operation == 1:
+    elif op == 1:
         print(addition(c,d))
-    elif operation == 2:
-        print(addition(c,d))
-    elif operation == 3:
-        print(addition(c,d))
-    elif operation == 4:
-        print(addition(c,d))
+    elif op == 2:
+        print(subtraction(c,d))
+    elif op == 3:
+        print(multiplication(c,d))
+    elif op == 4:
+        print(division(c,d))
     else:
         print("Wrong operation")
 
@@ -125,4 +125,5 @@ def calculator():
 while True:
     flag = calculator()
     if flag == False:
-        break
+        print("Exiting the app")
+        break   # Breaking the loop once the user chooses to exit
