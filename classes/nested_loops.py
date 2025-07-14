@@ -15,9 +15,12 @@ def nestedLoops():
 
 def multiplication_table():
     print("=== Multiplication Table ===")
+
     for i in range(1, 11):  # Numbers 1 to 10
+    
         for j in range(1, 11):  # Multiply by 1 to 10
             print(f"{i} x {j} = {i*j} ")
+        
         print()  # New line after each row
 
 multiplication_table()
